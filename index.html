@@ -1,8 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <meta charset="UTF-8">
+  <script src="https://live.zwidgets.com/js-sdk/1.1/ZohoEmbededAppSDK.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h3>NBU Exchange Rate</h3>
+  <article class="container">
+
+    <div class="content">
+      <div>
+        <span data-key="nbuRateDiv"></span>
+        <span id="nbuRate" class="value">—</span>
+      </div>
+
+      <div>
+        <span data-key="dealRateDiv"></span>
+        <span id="dealRate" class="value">—</span>
+      </div>
+
+      <div>
+        <span data-key="diffDiv"></span>
+        <span id="diff" class="value">—</span>
+      </div>
+
+      <button id="saveBtn">
+        <span data-key="saveButton"></span>
+      </button>
+    </div>
+    <select id="language-selector">
+      <option value="en" class="lang">En</option>
+      <option value="ua" selected class="lang">Ua</option>
+    </select>
+  </article>
+  <article id="output">
+    
+  </article>
 </body>
+
 </html>
